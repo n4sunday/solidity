@@ -1,12 +1,12 @@
 # Solidity
 
-https://solidity-by-example.org
+📌 https://solidity-by-example.org
 
 ## 🚀 Hello World
 
 **pragma** specifies the compiler version of Solidity.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 // compiler version must be greater than or equal to 0.8.3 and less than 0.8.0
 pragma solidity ^0.8.3;
@@ -20,7 +20,7 @@ contract HelloWorld {
 
 Here is a simple contract that you can get, increment and decrement the count store in this contract
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -54,7 +54,7 @@ Here we introduce you to some primitive data types available in Solidity.
 - `int`
 - `address`
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -105,7 +105,7 @@ There are 3 types of variables in Solidity
   - stored on the blockchain
 - **global** (provides information about the blockchain)
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -131,7 +131,7 @@ To write or update a state variable you need to send a transaction.
 
 On the other hand, you can read state variables, for free, without any transaction fee.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -169,7 +169,7 @@ There are 2 upper bounds to the amount of gas you can spend
 - **gas limit** (max amount of gas you're willing to use for your transaction, set by you)
 - **block gas limit** (max amount of gas allowed in a block, set by the network)
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -194,7 +194,7 @@ contract Gas {
 
 Solidity support conditional statements **if, else** if and **else**.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -220,7 +220,7 @@ Don't write loops that are unbounded as this can hit the gas limit, causing your
 
 For the reason above, **while** and **do while** loops are rarely used.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -257,7 +257,7 @@ Maps are created with the syntax **mapping(keyType => valueType).**
 
 Mappings are not iterable.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -311,7 +311,7 @@ contract NestedMapping {
 
 Array can have a compile-time fixed size or a dynamic size.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -393,7 +393,7 @@ Solidity supports enumerables and they are useful to model choice and keep track
 
 Enums can be declared outside of a contract.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -443,7 +443,7 @@ contract Enum {
 
 File that the enum is declared in
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -458,7 +458,7 @@ enum Status {
 
 File that imports the enum above
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -478,7 +478,7 @@ They are useful for grouping together related data.
 
 Structs can be declared outside of a contract and imported in another contract.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -533,7 +533,7 @@ contract Todos {
 
 File that the struct is declared in
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -545,7 +545,7 @@ struct Todo {
 
 File that imports the struct above
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -565,7 +565,7 @@ Variables are declared as either **storage**, **memory** or **calldata** to expl
 - **memory** - variable is in memory and it exists while a function is being called
 - **calldata** - special data location that contains function arguments, only available for **_external_** functions
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -613,7 +613,7 @@ here are several ways to return outputs from a function.
 
 Public functions cannot accept certain data types as inputs or outputs
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -704,7 +704,7 @@ Getter functions can be declared **view** or **pure**.
 
 **Pure** function declares that no state variable will be changed or read.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
@@ -734,7 +734,7 @@ You can throw an error by calling **require**, **revert** or **assert**.
 - **revert** is similar to **require**. See the code below for details.
 - **assert** is used to check for code that should never be false. Failing assertion probably means that there is a bug.
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
