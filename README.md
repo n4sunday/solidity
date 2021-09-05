@@ -770,7 +770,7 @@ contract Error {
 
 Here is another example
 
-```sol
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.3;
 
