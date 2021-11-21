@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Nolicense
 pragma solidity 0.8.4;
 
-contract Day4 {
+contract Ep4 {
     enum Status {
         PAID,
         UNPAAID
